@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int M1,M2,M3,total;
+    float percent;
+    scanf("%d%d%d",&M1,&M2,&M3);
+    total = M1+M2+M3;
+    percent = (total/300.0)*100;
+    printf("%.2f",percent);
+    if(percent>=90){
+        printf("\nA");
+    }
+    else if(percent>=80){
+        printf("\nB");
+    }
+    else if(percent>=70){
+        printf("\nC");
+    }
+    else if(percent>=60){
+        printf("\nD");
+    }
+    else if(percent>=50){
+        printf("\nE");
+    }
+    else if(percent<40){
+        printf("\nF");
+    }
+    
+}
