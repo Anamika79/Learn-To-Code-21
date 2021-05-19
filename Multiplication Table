@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int num,i;
+    do{
+        printf("\n1.Table of 1\n");
+        printf("2.Table of 2\n");
+        printf("3.Table of 3\n");
+        printf("4.Table of 4\n");
+        printf("5.Table of 5\n");
+        printf("6.Exit\n"); 
+        scanf("%d",&num);
+        if(num==6){
+            exit(0);
+        }
+        if(num>5){
+        printf("Enter a valid option!");
+        }
+        else{
+            for(i=1;i<=10;i++){
+                printf("%d ",num*i);
+            }
+        }
+        
+    }
+    while(1);
+    
+}
