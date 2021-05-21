@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c,det;
+    double x1,x2;
+    scanf("%d %d %d",&a,&b,&c);
+    det = b*b - 4*a*c;
+    if(det > 0){
+        x1 = (-b + sqrt(det))/(2*a);
+        x2 = (-b - sqrt(det))/(2*a);
+        printf("Distinct Real : %.2lf , %.2lf", x1,x2);
+    }
+    else if (det == 0){
+        printf("Equal Real: %.2lf , %.2lf",(double)-b/(2*a),(double)-b/(2*a));
+    }
+    else if (det < 0){
+        printf("Complex: %.2lf + i%.2lf ,", -b /(double) 2*a ,(sqrt(-det)/2*a));
+        printf(" %.2lf - i%.2lf", -b /(double) 2*a , (sqrt(-det)/2*a));    
+    }
+}
