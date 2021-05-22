@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int myarray[]={10,25,8,14,3,23,1,0,12,9},i;
+    int length = sizeof(myarray)/sizeof(myarray[0]);
+    printf("%d",myarray[3]);
+    printf("\n%d",myarray[9]);
+    myarray[2] = 30;
+    printf("\n%d",myarray[2]);
+    printf("\n");
+    for(i=0;i<length;++i){
+        printf("%d ",myarray[i]);
+    }  
+}
