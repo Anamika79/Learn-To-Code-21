@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n,i,j,k;
+    scanf("%d",&n);
+    if(n>1){
+        for(i=1;i<=n;i++){
+        for(j=1;j<i;j++){
+            printf("  ");
+        }
+            for(k=i;k<=n;k++){
+                printf("* ");
+            }
+                for(k=i+1;k<=n;k++){
+                    printf("* ");
+                }
+        printf("\n");
+        }
+    }
+    else{
+        printf("ERROR");
+    }
+}
