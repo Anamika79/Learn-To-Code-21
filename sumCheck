@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int num1,num2,rev=0,i,rem,flag=0;
+    scanf("%d %d",&num1,&num2);
+    int sum = num1 + num2;
+    printf("%d\n",sum);
+    if(sum%2==0){
+        while(sum>0){
+            rem = sum %10;
+            rev = rev*10 +rem;
+            sum = sum/10;
+        }
+        printf("%d",rev);
+    }
+    else{
+        for(i=2;i<= sum/2;i++){
+            if(sum%i == 0){
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0){
+            printf("Prime");
+        }
+        else{
+            printf("Not prime");
+        }
+    }
+}
