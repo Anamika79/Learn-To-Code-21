@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int num1,num2;
+    scanf("%d %d",&num1,&num2);
+    printf("a=%d b=%d\n",num1,num2);
+    int temp = num1;
+    num1 = num2;
+    num2 = temp;
+    printf("a=%d b=%d",num1,num2);
+}
