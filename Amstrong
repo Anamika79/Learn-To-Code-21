@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+void armstrong(int number){
+    int d,sum=0;
+    int temp = number;
+    while(number>0){
+        d = number%10;
+        sum += d*d*d;
+        number = number/10;
+    }
+    if(sum == temp){
+        printf("Amstrong");
+    }
+    else{
+        printf("Not Amstrong");
+    }
+}
+int main() {
+    int num;
+    scanf("%d",&num);
+    armstrong(num);
+}
