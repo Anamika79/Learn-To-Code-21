@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    int vowels,consonants,space,i;
+    vowels=consonants=space=0;
+    scanf("%[^\n]%*c",str);
+    for(i=0;str[i] != '\0';++i){
+        if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u'){
+            vowels++;
+        }
+        else if (str[i] == ' '){
+            space++;
+        }
+        else{
+            consonants++;
+        }
+    }
+    printf("%d\n",vowels);
+    printf("%d\n",consonants);
+    printf("%d",space);
+}
